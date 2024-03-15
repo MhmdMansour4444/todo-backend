@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sign in</title>
+    <title>Sign up</title>
     <link rel="stylesheet" href="/todo-frontend/assets/styles/index.css" />
   </head>
   <body>
-    <h2>Sign in</h2>
+    <h2>Sign up</h2>
     <div class="container">
       <div>
         <div id="hiddenMsgDiv">
@@ -17,25 +17,38 @@
             src="/todo-frontend/assets/images/giphy.gif"
             alt="gif"
           />
-          <h4 id="hiddenMsg">Wrong credentials</h4>
+          <h4 id="hiddenMsg">Error message will display here</h4>
         </div>
       </div>
-      <form onsubmit="Login(event)">
+      <form onsubmit="SignUp(event)">
         <div class="error-message" id="error-message"></div>
         <label for="username">Username</label>
         <input
           type="text"
           id="username"
           name="username"
-          placeholder="enter your username"
+          placeholder="Enter your username"
+          required
+        />
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your email"
           required
         />
         <label for="password">Password</label>
-        <input type="password" id="password" name="password" placeholder="Enter your Password"required />
-        <input type="submit" value="Login" />
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Enter your password"
+          required
+        />
+        <input type="submit" value="Sign Up" />
       </form>
-      <p>Don't have an account? <a style="text-decoration: none" href="./signup.html">Sign Up</a></p>
     </div>
-    <script src="/todo-frontend/assets/javascript/login.js"></script>
+    <script src="/todo-frontend/assets/javascript/signup.js"></script>
   </body>
 </html>
