@@ -25,3 +25,4 @@ if (isset($_POST['task_id'])) {
 }
 
 echo json_encode($response);
+

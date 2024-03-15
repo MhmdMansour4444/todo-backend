@@ -17,10 +17,15 @@
             src="/todo-frontend/assets/images/giphy.gif"
             alt="gif"
           />
-          <h4 id="hiddenMsg">Error message will display here</h4>
+          <h4 id="hiddenMsg"></h4>
         </div>
       </div>
-      <form onsubmit="SignUp(event)">
+      <form
+        id="signupForm"
+        action="http://localhost:4433/todo-list-backend/todo-backend/signup.php"
+        method="POST"
+        onsubmit="SignUp(event)"
+      >
         <div class="error-message" id="error-message"></div>
         <label for="username">Username</label>
         <input
@@ -46,7 +51,7 @@
           placeholder="Enter your password"
           required
         />
-        <input type="submit" value="Sign Up" />
+        <input type="submit" value="Sign Up" onclick="submitForm()" />
       </form>
     </div>
     <script src="/todo-frontend/assets/javascript/signup.js"></script>
