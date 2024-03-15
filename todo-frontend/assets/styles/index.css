@@ -102,7 +102,7 @@ h4{
         flex-direction: column;
         justify-content:center ;
         align-items: center;
-        background-image: url("/assets/images/notes-bg-mobile.jpg");
+        background-image: url("/todo-frontend/assets/images/notes-bg-mobile.jpg");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
