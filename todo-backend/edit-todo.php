@@ -22,7 +22,7 @@ if (isset ($_POST['task_id'])) {
 
     } else {
         $response['status'] = "error";
-        $response['message'] = "Title and task_check are required";
+        $response['message'] = "Task and status are required";
     }
 } else {
     $response['status'] = "error";

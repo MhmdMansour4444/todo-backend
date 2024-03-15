@@ -19,7 +19,7 @@ const Login = (event) => {
       //timeout the login to "gimmick for taking from db and seeing the gif"
       
       setTimeout(()=>{
-          window.location = "http://127.0.0.1:5500/todo.html";
+          window.location = "http://127.0.0.1:5500/index.html";
       },2000);
   
      
