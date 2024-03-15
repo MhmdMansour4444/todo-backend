@@ -11,18 +11,18 @@ if (isset ($_POST['task_id'])) {
         $task_check = $_POST['task_check'];
 
         $update_query = $mysqli->prepare('update todos set task = ?, task_check = ? where id = ?');
-        $update_query->bind_param('ssi', $todo_id, $task, $task_check);
+        $update_query->bind_param('sii', $todo_id, $task, $task_check);
         $update_query->execute();
 
         $update_query->store_result();
-        $num_rows = $update_query->num_rows;
+        $num_rows = $update_query->affected_rows;
 
-        $response['status'] = "success";
+        $response['status'] = "success";    
         $response['message'] = "Todo item updated successfully";
 
     } else {
         $response['status'] = "error";
-        $response['message'] = "Title and description are required";
+        $response['message'] = "Title and task_check are required";
     }
 } else {
     $response['status'] = "error";
