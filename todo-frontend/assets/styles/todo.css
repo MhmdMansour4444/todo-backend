@@ -68,8 +68,8 @@ button {
   font-size: 1.25rem;
   font-weight: 700;
   background-image: linear-gradient(to right, var(--orange), var(--lime));
-  --webkit-background-clip: text;
-  --webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   cursor: pointer;
   transition: 0.4s;
 }
@@ -149,8 +149,8 @@ main {
 
 .task .actions .edit {
   background-image: linear-gradient(to right, var(--orange),var(--lime));
-  --webkit-background-clip: text;
-  --webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .task .actions .delete {
